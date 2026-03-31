@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --navy-950: #0b1f3a;
+  --navy-900: #102a4c;
+  --navy-800: #163764;
+  --navy-700: #1f4a82;
+  --navy-100: #dbe7f7;
+  --navy-50: #eff4fc;
+}
+
+html,
+body {
+  background: #f8fbff;
+  color: var(--navy-950);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 700ms ease-out both;
+}

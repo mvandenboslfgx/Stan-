@@ -2,36 +2,36 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sanitair | S. Vermeulen Bouwservice",
+  title: "Douglas houtbouw | S. Vermeulen Bouwservice",
   description:
-    "Sanitair en badkamer installaties voor renovatie en nieuwbouw in Heinenoord en omgeving.",
+    "Specialist in douglas houtbouw: overkappingen, schuttingen, buitenverblijven en maatwerk houtconstructies.",
 };
 
 export default function SanitairPage() {
   return (
-    <main className="mx-auto max-w-6xl px-6 py-32">
-      <h1 className="mb-8 text-5xl font-bold md:text-6xl">
-        Sanitair en badkamer installaties
+    <main className="mx-auto max-w-6xl px-6 py-16 md:py-32">
+      <h1 className="mb-6 text-4xl font-bold md:mb-8 md:text-6xl">
+        Douglas houtbouw
       </h1>
-      <p className="max-w-3xl text-lg text-[#163764]">
-        Complete sanitaire installaties voor renovatie en nieuwbouw, strak en
-        professioneel opgeleverd.
+      <p className="max-w-3xl text-lg text-[#b8cdf0]">
+        Wij bouwen met duurzaam douglas hout en leveren strak afgewerkte
+        constructies voor buitenruimtes.
       </p>
 
-      <section className="mt-12 rounded-xl border border-[#dbe7f7] bg-[#eff4fc] p-10 shadow-sm">
+      <section className="mt-10 animate-fade-up rounded-xl border border-[#1a3c73] bg-[#0a1c38] p-6 shadow-sm md:mt-12 md:p-10">
         <h2 className="mb-6 text-3xl font-bold">Wat wij doen</h2>
-        <ul className="space-y-3 text-lg text-[#163764]">
-          <li>Badkamer installatie</li>
-          <li>Toiletten</li>
-          <li>Leidingen</li>
-          <li>Renovatie</li>
+        <ul className="space-y-3 text-lg text-[#b8cdf0]">
+          <li>Overkappingen</li>
+          <li>Schuttingen</li>
+          <li>Buitenverblijven</li>
+          <li>Maatwerk houtconstructies</li>
         </ul>
       </section>
 
       <div className="mt-10">
         <Link
           href="/contact"
-          className="rounded-lg bg-[#163764] px-6 py-3 font-semibold text-white transition hover:scale-105 hover:bg-[#1f4a82]"
+          className="rounded-lg bg-[#1a3c73] px-6 py-3 font-semibold text-[#dce8fb] transition hover:scale-105 hover:bg-[#224b8f]"
         >
           Offerte aanvragen
         </Link>

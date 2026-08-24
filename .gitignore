@@ -1,3 +1,11 @@
 node_modules
 .vercel
 .next
+.open-next
+.dev.vars
+.wrangler
+.env
+.env.local
+.env.*.local
+cloudflare-env.d.ts
+*.tsbuildinfo

@@ -1,60 +1,71 @@
 import type { Metadata } from "next";
-import ContactForm from "../components/contact-form";
 
 export const metadata: Metadata = {
-  title: "Contact | S. Vermeulen Bouwservice",
+  title: "Contact | Montagebedrijf installatietechniek en houtbouw",
   description:
-    "Neem contact op met S. Vermeulen Bouwservice voor offertes en advies in Heinenoord en omgeving.",
+    "Neem contact op voor installatie montage, douglas houtbouw of complete montageprojecten.",
 };
 
 export default function ContactPage() {
   return (
-    <main className="mx-auto max-w-6xl px-6 py-32">
-      <h1 className="mb-8 text-5xl font-bold md:text-6xl">Contact</h1>
-      <p className="max-w-3xl text-lg text-[#163764]">
-        Neem vrijblijvend contact op voor advies of een offerte op maat.
+    <main className="mx-auto max-w-6xl px-6 py-16 md:py-32">
+      <h1 className="mb-6 text-4xl font-bold md:mb-8 md:text-6xl">Contact</h1>
+      <p className="max-w-3xl text-lg text-[#b8cdf0]">
+        Stuur direct een WhatsApp-bericht voor installatie montage, douglas
+        houtbouw of complete montageprojecten.
       </p>
 
-      <div className="mt-12 grid gap-12 lg:grid-cols-[1fr_1.2fr]">
-        <section className="rounded-xl border border-[#dbe7f7] bg-[#eff4fc] p-10 shadow-sm">
-          <h2 className="text-3xl font-bold text-[#0b1f3a]">Gegevens</h2>
-          <dl className="mt-6 space-y-5 text-[#163764]">
+      <div className="mt-10 grid gap-8 md:mt-12 md:grid-cols-2 md:gap-12">
+        <section className="animate-fade-up rounded-xl border border-[#1a3c73] bg-[#0a1c38] p-6 shadow-sm md:p-10">
+          <h2 className="text-3xl font-bold text-[#dce8fb]">Gegevens</h2>
+          <dl className="mt-6 space-y-5 text-[#b8cdf0]">
             <div>
-              <dt className="text-sm text-[#0b1f3a]">Telefoon</dt>
+              <dt className="text-sm text-[#dce8fb]">Telefoon</dt>
               <dd>
-                <a className="hover:text-[#1f4a82]" href="tel:0612812600">
+                <a className="hover:text-[#dce8fb]" href="tel:0612812600">
                   06-12812600
                 </a>
               </dd>
             </div>
             <div>
-              <dt className="text-sm text-[#0b1f3a]">E-mail</dt>
+              <dt className="text-sm text-[#dce8fb]">E-mail</dt>
               <dd>
                 <a
-                  className="hover:text-[#1f4a82]"
-                  href="mailto:info@vermeulenbouwservices.nl"
+                  className="break-all hover:text-[#dce8fb]"
+                  href="mailto:info@vermeulenbouwservice.nl"
                 >
-                  info@vermeulenbouwservices.nl
+                  info@vermeulenbouwservice.nl
                 </a>
               </dd>
             </div>
             <div>
-              <dt className="text-sm text-[#0b1f3a]">Locatie</dt>
+              <dt className="text-sm text-[#dce8fb]">Locatie</dt>
               <dd>Heinenoord</dd>
             </div>
             <div>
-              <dt className="text-sm text-[#0b1f3a]">KvK</dt>
+              <dt className="text-sm text-[#dce8fb]">KvK</dt>
               <dd>94927898</dd>
             </div>
             <div>
-              <dt className="text-sm text-[#0b1f3a]">BTW</dt>
+              <dt className="text-sm text-[#dce8fb]">BTW</dt>
               <dd>NL005118783B12</dd>
             </div>
           </dl>
         </section>
 
-        <section className="rounded-xl border border-[#dbe7f7] bg-[#eff4fc] p-3 shadow-sm">
-          <ContactForm />
+        <section className="animate-fade-up rounded-xl border border-[#1a3c73] bg-[#0a1c38] p-6 shadow-sm [animation-delay:120ms] md:p-10">
+          <h2 className="text-3xl font-bold text-[#dce8fb]">WhatsApp</h2>
+          <p className="mt-4 text-[#b8cdf0]">
+            Stuur ons direct een bericht. We reageren zo snel mogelijk.
+          </p>
+          <a
+            href="https://wa.me/31612812600"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-6 inline-flex rounded-lg bg-[#1a3c73] px-6 py-3 font-semibold text-[#dce8fb] transition hover:scale-105 hover:bg-[#224b8f]"
+          >
+            Open WhatsApp
+          </a>
         </section>
       </div>
     </main>

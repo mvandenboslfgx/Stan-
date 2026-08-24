@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Foto's | S. Vermeulen Bouwservice",
+  title: "Cases & projectresultaten | S. Vermeulen Bouwservice",
   description:
-    "Bekijk projectfoto's van Douglas buitenverblijven, hout-beton schuttingen en installatiewerk.",
+    "Bekijk gerealiseerde montageprojecten in installatietechniek en douglas houtbouw.",
 };
 
 const groupedPhotos = [
@@ -30,15 +30,15 @@ const groupedPhotos = [
 
 export default function FotosPage() {
   return (
-    <main className="mx-auto max-w-6xl px-6 py-32">
-      <h1 className="mb-8 text-5xl font-bold md:text-6xl">Foto&apos;s</h1>
-      <p className="max-w-3xl text-lg text-[#163764]">
-        Een overzicht van gerealiseerde projecten.
+    <main className="mx-auto max-w-6xl px-6 py-16 md:py-32">
+      <h1 className="mb-6 text-4xl font-bold md:mb-8 md:text-6xl">Cases</h1>
+      <p className="max-w-3xl text-lg text-[#b8cdf0]">
+        Selectie van gerealiseerde montageprojecten en afwerkingsniveau.
       </p>
 
       {groupedPhotos.map((group, groupIndex) => (
-        <section key={group.title} className="mt-14 first:mt-12">
-          <h2 className="mb-6 text-2xl font-semibold">{group.title}</h2>
+        <section key={group.title} className="mt-10 first:mt-8 md:mt-14 md:first:mt-12">
+          <h2 className="mb-6 text-2xl font-semibold text-[#dce8fb]">{group.title}</h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {group.photos.map((photo, index) => (
               <div

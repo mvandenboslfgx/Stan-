@@ -2,58 +2,51 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Diensten | S. Vermeulen Bouwservice",
+  title: "Diensten | Installatie montage en douglas houtbouw",
   description:
-    "Bekijk alle diensten van S. Vermeulen Bouwservice: verwarming, sanitair, renovatie en klussen.",
+    "Gespecialiseerde diensten in installatie montage, douglas houtbouw en complete montageprojecten.",
 };
 
 const services = [
   {
-    title: "Verwarming",
-    description: "Installatie, onderhoud en storingen van cv-systemen.",
+    title: "Installatie montage",
+    description:
+      "Montage van W-installaties, S-installaties en installatiesystemen met technische precisie.",
     href: "/verwarming",
   },
   {
-    title: "Sanitair",
-    description: "Badkamers, leidingen en complete sanitaire installaties.",
+    title: "Douglas houtbouw",
+    description:
+      "Overkappingen, schuttingen, buitenverblijven en maatwerk constructies in duurzaam douglas hout.",
     href: "/sanitair",
   },
   {
-    title: "Ventilatie en luchtbehandeling",
-    description: "Gezonde lucht en efficiënte installaties in huis.",
-    href: "/contact",
-  },
-  {
-    title: "Renovatie en verbouwing",
-    description: "Van idee tot oplevering met strakke afwerking.",
-    href: "/contact",
-  },
-  {
-    title: "Klussen in en rondom huis",
-    description: "Praktische oplossingen voor kleine en grote klussen.",
+    title: "Montage projecten",
+    description:
+      "Complete montageprojecten met strakke planning en uitvoering in samenwerking met aannemers.",
     href: "/contact",
   },
 ];
 
 export default function DienstenPage() {
   return (
-    <main className="mx-auto max-w-6xl px-6 py-32">
-      <h1 className="mb-8 text-5xl font-bold md:text-6xl">Diensten</h1>
-      <p className="max-w-3xl text-lg text-[#163764]">
-        Installatie, renovatie en onderhoud met duidelijke communicatie en
-        professionele uitvoering.
+    <main className="mx-auto max-w-6xl px-6 py-16 md:py-32">
+      <h1 className="mb-6 text-4xl font-bold md:mb-8 md:text-6xl">Diensten</h1>
+      <p className="max-w-3xl text-lg text-[#b8cdf0]">
+        Gericht op montage in installatietechniek en specialistisch douglas
+        houtwerk. Kort, duidelijk en professioneel uitgevoerd.
       </p>
 
-      <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 grid gap-8 md:grid-cols-3">
         {services.map((service) => (
           <Link
             key={service.title}
             href={service.href}
-            className="rounded-xl border border-[#dbe7f7] bg-[#eff4fc] p-8 shadow-sm transition hover:bg-[#dbe7f7]"
+            className="animate-fade-up rounded-xl border border-[#1a3c73] bg-[#0a1c38] p-8 shadow-sm transition hover:-translate-y-1 hover:bg-[#10274d]"
           >
-            <h2 className="mb-4 text-2xl font-semibold text-[#0b1f3a]">{service.title}</h2>
-            <p className="text-[#163764]">{service.description}</p>
-            <p className="mt-6 text-[#1f4a82]">Naar pagina →</p>
+            <h2 className="mb-4 text-2xl font-semibold text-[#dce8fb]">{service.title}</h2>
+            <p className="text-[#b8cdf0]">{service.description}</p>
+            <p className="mt-6 text-[#8fb1e3]">Naar pagina →</p>
           </Link>
         ))}
       </div>
